@@ -1,0 +1,24 @@
+<html>
+<body>
+
+    <h1>Latihan Javascript</h1>
+
+    <p>Silahkan masukkan angka</p>
+
+    <input id="demo" type="text">
+
+    <script>
+        function myfunction()
+        {
+            var x=document.getElementById("demo").value;
+            if(x==""||isNaN(x))
+            {
+                alert("Bukan angka");
+            }
+        }
+    </script>
+
+    <button type="button" onclick="myfunction()">Cek Angka</button>
+
+</body>
+</html>
