@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - JPhotography</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        body { 
+            background-color: #ffffff; 
+            color: #000000; 
+            overflow-x: hidden; 
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .font-serif { font-family: 'Playfair Display', 'Times New Roman', Times, serif; }
+        .font-sans { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .viewfinder-container { position: relative; }
+        .navbar-toggler[aria-expanded="true"] { display: none !important; }
+        
+        /* BINGKAI KAMERA (Pendekatan Mudah & Rapi standar Asprak) */
+        .bracket {
+            position: fixed;
+            width: 45px;
+            height: 45px;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        .atas-kiri   { top: 25px; left: 12px; border-top: 10px solid #111111; border-left: 10px solid #111111; }
+        .atas-kanan  { top: 25px; right: 12px; border-top: 10px solid #111111; border-right: 10px solid #111111; }
+        .bawah-kiri  { bottom: 0; left: 12px; border-bottom: 10px solid #111111; border-left: 10px solid #111111; }
+        .bawah-kanan { bottom: 0; right: 12px; border-bottom: 10px solid #111111; border-right: 10px solid #111111; }
+
+        .navbar-brand { font-size: 1.85rem; font-weight: 700; letter-spacing: -0.5px; text-decoration: none; }
+        .navbar-nav .nav-link { font-size: 0.8rem; font-weight: 500; color: #555555 !important; letter-spacing: 1.5px; padding: 6px 18px !important; transition: all 0.2s; }
+        .navbar-nav .nav-link:hover { color: #000000 !important; }
+        .nav-pill-active { border: 1px solid #dcdcdc; border-radius: 50px; color: #000000 !important; font-weight: 600; }
+        
+        .form-control { border-radius: 0; border: 1px solid #dcdcdc; padding: 12px; }
+        .form-control:focus { box-shadow: none; border-color: #111111; }
+        .btn-dark { border-radius: 0; padding: 10px 30px; letter-spacing: 2px; }
+    </style>
+</head>
+<body>
+
+    <div class="bracket atas-kiri"></div>
+    <div class="bracket atas-kanan"></div>
+    <div class="bracket bawah-kiri"></div>
+    <div class="bracket bawah-kanan"></div>
+
+    <div style="background-color: #f8f9fa; padding-bottom: 0.5rem; padding-top: 0.5rem;">
+        <div class="container viewfinder-container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-3 px-md-5">
+                <div class="container-fluid px-0">
+                    <a class="navbar-brand font-serif" href="PRAK601_Nadya Nadhir Soraya_2510817120022.html" style="color: #000000;">
+                        JPhotography
+                    </a>
+                    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end mt-3 mt-lg-0" id="navbarNavNav">
+                        <ul class="navbar-nav flex-row justify-content-center gap-3 align-items-center font-sans" style="list-style: none; padding-left: 0;">
+                            <li class="nav-item"><a class="nav-link text-center" href="PRAK601_Nadya Nadhir Soraya_2510817120022.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link text-center" href="about.html">ABOUT ME</a></li>
+                            <li class="nav-item"><a class="nav-link text-center" href="portfolio.html">PORTFOLIO</a></li>
+                            <!-- Tanda aktif ada di CONTACT -->
+                            <li class="nav-item"><a class="nav-link nav-pill-active text-center" href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <main class="py-5 font-sans min-vh-50">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="font-serif fw-bold">Get In Touch</h2>
+                <p class="text-secondary">Have a project in mind? Let's work together.</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-4">
+                            <input type="text" class="form-control" placeholder="YOUR NAME" required>
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" class="form-control" placeholder="YOUR EMAIL" required>
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control" rows="5" placeholder="YOUR MESSAGE" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-dark fw-bold">SEND MESSAGE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="container position-relative py-5 mt-4">
+        <footer class="text-center font-sans">
+            <h4 class="font-serif fw-bold mb-1" style="color: #000000;">JPhotography</h4>
+            <p class="text-secondary mb-3" style="font-size: 0.75rem; letter-spacing: 0.5px;">&copy; Copyrights 2019. All Rights Reserved.</p>
+            <div class="d-flex justify-content-center gap-4 fs-5 text-secondary">
+                <a href="#" class="text-secondary text-decoration-none"><i class="fa-brands fa-dribbble"></i></a>
+                <a href="#" class="text-secondary text-decoration-none"><i class="fa-brands fa-behance"></i></a>
+                <a href="#" class="text-secondary text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-secondary text-decoration-none"><i class="fa-brands fa-500px"></i></a>
+                <a href="#" class="text-secondary text-decoration-none"><i class="fa-brands fa-flickr"></i></a>
+                <a href="#" class="text-secondary text-decoration-none"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" class="text-secondary text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
